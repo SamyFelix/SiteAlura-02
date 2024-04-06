@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/*Importando as fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Revolution&display=swap');
+
+
+:root {
+    /*Cores do site*/
+    --cor1: #90845e;
+    --cor2: #242424;
+    --cor3: #cdc4c3;
+    --cor4: azure;
+    --cor5: black;
+    --cor6: rgba(255, 255, 255, 0.719);
+    --cor7: rgba(255, 255, 255, 0);
+
+    /*Fontes do site*/
+    --fonte1: "Bebas Neue", sans-serif;
+    --fonte2: "Josefin Sans", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Configurando os botões do site*/
+button{
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  font-family: var(--fonte1);
+  font-size: 15px;
+  background-color: var(--cor7);
+  border: solid  2px;
+}
+button:hover{
+    background-color: var(--cor1);
+    border-color: var(--cor1);
+    color: var(--cor3);
+}
+.Comando{
+    border-color: var(--cor1);
+    color: var(--cor1);
+}
+.Ligar{
+    border-color: var(--cor2);
+    color: var(--cor2);
+}
+
+header{   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+header a img{
+    height: 85px;
+}
+header nav a {
+    padding: 0px 5px 0px 5px;
+    font-family: var(--fonte1);
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--cor4);
+}
+header nav a:hover{
+    color: var(--cor2);
+}
+
+#Barbiaria{
+    background-image:url(imagens/foto\ tamanho\ P.jpg);
+    height: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.tranparensia{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, var(--cor5) ,var(--cor6));
+    position: absolute;
+    opacity: 0.5;
+    z-index: 0;
+}
+#Texto1{
+    color: var(--cor4);
+    z-index: 2;    
+}
+#Texto1 h1{
+    font-family: var(--fonte1);
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+#Texto1 p{
+    font-family: var(--fonte2);
+    font-size: 15px;
+}
+#Texto1 img{
+    align-items: center;
+    animation: Seta 1s infinite;
+    margin-bottom: -200px;
+}
+@keyframes Seta{
+    to {
+       transform: translateY(10px); 
+    } 
+}
+
+#ImformaçoesDoEstabelecimento{
+    background-color: var(--cor2);
+    text-align: center;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#BotoesParaComando{
+    padding: 10px 0px 10px 0px;
+}
+#Paginas{
+    height: 500px;
+    border-top: solid var(--cor1) 1px;
+    border-bottom: solid var(--cor1) 1px;
+}
+
+#AreaDeContato{
+    background-image: url(imagens/foto2\ tamanho\ P.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#Texto2{
+    color: var(--cor4);
+    z-index: 1;
+}
+#Texto2 h2{
+    font-family: var(--fonte1);
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+#Texto2 p{
+    font-family: var(--fonte2);
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+footer{
+   font-family: var(--fonte2);
+   font-size: 20px;
+   color: var(--cor4);
+   padding: 20px;
+   background-color: var(--cor2);
+   border-top: solid var(--cor1) 2px;
+   text-align: center;
+}
